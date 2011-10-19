@@ -5,3 +5,13 @@
  *= require_self
  *= require_tree . 
 */
+html{color:#505050; font-size:14px; line-height:20px;}
+
+.contacts-link{width:100%; border-collapse: collapse;}
+.contacts-link td{padding:10px 20px; white-space:nowrap; border-bottom:1px solid #CCCCCC;}
+.contacts-link .show{width:70px;}
+.contacts-link .edit{width:70px;}
+.contacts-link .delete{width:70px;}
+.contacts-link th{padding:10px 20px; text-align: left; background:#d3ecff; color:#000000;}
+
+.contacts-link tr:hover{background:#d9d9d9;}

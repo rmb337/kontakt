@@ -1,21 +1,21 @@
-<h1>Listing contacts</h1>
+<h1>Список контактов</h1>
 
-<table>
+<table class="contacts-link">
   <tr>
-    <th>Name</th>
-    <th>Phone</th>
-    <th></th>
-    <th></th>
-    <th></th>
+    <th>Контакт</th>
+    <th>Телефон</th>
+    <th class="show"></th>
+    <th class="edit"></th>
+    <th class="delete"></th>
   </tr>
 
 <% @contacts.each do |contact| %>
   <tr>
     <td><%= contact.name %></td>
     <td><%= contact.phone %></td>
-    <td><%= link_to 'Show', contact %></td>
-    <td><%= link_to 'Edit', edit_contact_path(contact) %></td>
-    <td><%= link_to 'Destroy', contact, confirm: 'Are you sure?', method: :delete %></td>
+    <td><%= link_to 'Посмотреть', contact %></td>
+    <td><%= link_to 'Изменить', edit_contact_path(contact) %></td>
+    <td><%= link_to 'Удалить', contact, confirm: 'Are you sure?', method: :delete %></td>
   </tr>
 <% end %>
 </table>
